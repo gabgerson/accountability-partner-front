@@ -15,8 +15,8 @@ function App() {
   });
  
 
-  axiosInstance.get('/goals')
-  .then((response) => console.log(response.data))
+  // axiosInstance.get('/goals')
+  // .then((response) => console.log(response.data))
   
 
   useEffect(() => {
@@ -33,7 +33,7 @@ function App() {
     axiosInstance.get('/goals')
       .then((response) => response.data)
       .then((goals) => {
-        console.log(goals, "GOALS")
+        // console.log(goals, "GOALS")
         setAppState({ loading:false, goals: goals });
       });
     },[setAppState]);

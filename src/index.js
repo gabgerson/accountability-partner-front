@@ -8,6 +8,7 @@ import  Header  from './components/header.component';
 import  Footer  from './components/footer.component';
 import SignUp from './components/signup.component';
 import Login from './components/login.component';
+import Logout from './components/logout.component';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -19,6 +20,7 @@ const routing = (
         <Route exact path="/" component={App} />
         <Route exact path="/signup" component={SignUp} />
         <Route exact path="/login" component={Login} />
+        <Route exact path="/logout" component={Logout} />
   
 
       </Switch>

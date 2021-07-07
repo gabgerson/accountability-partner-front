@@ -12,7 +12,7 @@ const Goals = (props) => {
 
 //   const classes = useStyles();
 
-console.log(goals, "goals comonent")
+// console.log(goals, "goals comonent")
   if (!goals || goals.length === 0) return <p> No Goals! </p>;
   return (
     <React.Fragment>
@@ -20,26 +20,6 @@ console.log(goals, "goals comonent")
         <Grid container spacing={5} >
             
   
-         
-
-  
-              <Grid item key={goals.id} xs={12} md={4}>
-                <Card>
-                  <CardContent>
-                    <Typography
-                      variant="h6"
-                      compenent="h2"
-                    >
-                      {goals[0].title}
-                    </Typography>
-                  
-                  </CardContent>
-   
-                </Card>
-
-              </Grid>
-       
-       
            {goals.map((goal => {
          
             return(
